@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazim Ali Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <h1 id="title">Kazim Ali Survey Form</h1>
+    <p id="description">Please fill out this survey to help us improve our services.</p>
+
+    <form id="survey-form" action="#" method="POST">
+        <label id="name-label" for="name">Name:
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <label id="email-label" for="email">Email:
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </label>
+
+        <label id="number-label" for="number">Number (1-10):
+            <input type="number" id="number" name="number" min="1" max="10" placeholder="Enter a number between 1 and 10" required>
+        </label>
+
+        <label for="dropdown">Select an option:
+            <select id="dropdown" name="options" required>
+                <option value="">--Please choose an option--</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </label>
+
+        <fieldset>
+            <legend>Choose your favorite fruit:</legend>
+            <label>
+                <input type="radio" name="fruit" value="apple" required> Apple
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="banana"> Banana
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select your hobbies:</legend>
+            <label>
+                <input type="checkbox" name="hobbies" value="reading"> Reading
+            </label>
+            <label>
+                <input type="checkbox" name="hobbies" value="traveling"> Traveling
+            </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+        </label>
+
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
